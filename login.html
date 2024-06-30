@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/40589d85f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Login Page</h1>
+           
+                <div class="input-group">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                           <input id="Username" placeholder="User Id"><br><br>
+                        </div>
+                        
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>                               
+                               <input id="UserpasswordField"  placeholder="Password"><br><br>
+                               <i class="fa-solid fa-eye"></i>
+                             </div>
+                             <p>Forword password <a href="https://accounts.google.com/signin/v2/challenge/dp?TL=AGEVcSTlMZ0IA-7f8KvjUUylRseefBY1CKctbJo8YCCvwBmcIUii6iUEOqWN_tPa&cid=2&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&hl=en-GB&ifkv=AXo7B7Ub39teIfXjOwrUbDsqrshCAH9rGqslD8f8rsrvWISIZnDpjncAr5rLzTwRvYBnyC4X82ptiA&kdi=CAM&rart=ANgoxcdXqCLRJuww2kzYWN8fN4dcsD0QJiAIAuzcgM4bx20IK3xbzJHdpjcZ8rzfnvnjlTyVV7ZRavD6_7_-EwDoWfSMjzeW3A&rpbg=1&sarp=1&scc=1&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin">click Here</a></p>
+                            <br>
+                            <div class="btn-field">
+                            <button onclick="Loginpage()">Submit</button>
+                            
+                            </div> 
+                    
+            </form>
+        </div>
+    </div>
+    <script>
+         function Loginpage()
+        {
+        var Username=document.getElementById('Username').value;
+        var Userpassword=document.getElementById('UserpasswordField').value;
+       if (Username=="pk766747@gmail.com" && Userpassword=="Pranshu@123") {
+
+        location.assign("Amazone.html")
+       }
+       else
+       {
+        window.alert("User id / password failed");
+       }
+    }
+    
+    </script>
+       
+    
+</body>
+</html>
